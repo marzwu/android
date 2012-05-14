@@ -4,5 +4,6 @@
     <string name="hello">Hello World, WeiboActivity!</string>
     <string name="app_name">Weibo</string>
     <string name="btn_label">click me</string>
+    <string name="ChooseTempletCategory">选择模板</string>
 
 </resources>

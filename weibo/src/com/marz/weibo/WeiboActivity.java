@@ -2,6 +2,7 @@ package com.marz.weibo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -15,11 +16,14 @@ public class WeiboActivity extends Activity {
         
         Button b = (Button)findViewById(R.id.btn_view);
         b.setOnClickListener(clickhandler);
+        
+        Log.i(ACTIVITY_SERVICE, "launch success");
     }
     
     private OnClickListener clickhandler = new OnClickListener() {
 		public void onClick(View v) {
 			((Button)v).setClickable(false);
+			setContentView(R.layout.login);
 		}
 	};
 }
